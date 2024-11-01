@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
+
+.navbar {
+    background: linear-gradient(to right, #111827, #1F2937);
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(to right, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 12rem;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Manrope', sans-serif;
+}
+
+.navbar-link:hover {
+    color: orange;
+}
+
+.wallet-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.wallet-button {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s;
+}
+
+.multi-button {
+    background: linear-gradient(to right, orange, red);
+}
+
+.multi-button:hover {
+    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.3);
+}
+
+.disconnect-button {
+    background: #374151;
+}
+
+.disconnect-button:hover {
+    background: #4B5563;
+}
+
+.wallet-button:hover {
+    opacity: 1;
+}
+
+.wallet-button {
+    position: relative;
+}
+
+.wallet-button:hover ~ .wallet-button,
+.wallet-button:hover + .wallet-button {
+    opacity: 0.5;
+}
+
+.wallet-buttons:hover .wallet-button {
+    opacity: 0.5;
+}
+
+.wallet-button:hover {
+    opacity: 1;
+}
